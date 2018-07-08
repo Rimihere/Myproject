@@ -13,13 +13,14 @@ public class TestSikuli {
 
 System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Tools\\chromedriver.exe");
 WebDriver driver= new ChromeDriver();
-driver.get("https://www.google.com/");
+driver.get("https://www.rediff.com/");
 //*[@id='gb_70']
 driver.findElement(By.xpath("//*[@id='gb_70']")).click();
 Screen screen=new Screen();
 Pattern createaccount=new Pattern("C:\\Selenium\\Images\\CreateAccount.JPG");
 Thread.sleep(5000);
 screen.click(createaccount);
+System.out.println("My test for GIT");
 
 
 
